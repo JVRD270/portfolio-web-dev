@@ -5955,7 +5955,7 @@ figcaption {
   border-color: hsla(0, 0%, 100%, 0.15);
   background-color: #041a17;
   -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  transition: all 500ms ease;
   color: hsla(0, 0%, 100%, 0.74);
   text-align: center;
   position: relative;
@@ -5964,12 +5964,12 @@ figcaption {
 .presantation-link:hover .default-project-info {
   opacity: 0;
   color: #fff;
-  transition: all 300ms ease;
+  transition: all 500ms ease;
 }
 
 .default-project-info {
   opacity: 1;
-  transition: all 300ms ease;
+  transition: all 500ms ease;
 }
 
 .section-presanation {
