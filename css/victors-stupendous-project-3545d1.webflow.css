@@ -4594,7 +4594,6 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   max-width: 1140px;
-  min-height: 50px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: center;
