@@ -4104,7 +4104,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 6%;
+  padding-right: 4%;
   padding-left: 2%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -6349,7 +6349,7 @@ figcaption {
   }
 
   .navigation-content {
-    padding-right: 3%;
+    padding-right: 0%;
     padding-left: 3%;
   }
 
@@ -7037,7 +7037,7 @@ figcaption {
   }
 
   .navigation-content {
-    padding-right: 0%;
+    padding-right: 3%;
     padding-left: 4%;
   }
 
