@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .w-commerce-commercecartwrapper {
   display: inline-block;
   position: relative;
@@ -3551,17 +3552,19 @@ figcaption {
   padding: 2%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   font-family: 'Optician sans', sans-serif;
 }
 
 .about-me-content {
+  margin-top: 5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
   height: 85%;
   padding: 2%;
+  box-sizing: content-box;
 }
 
 .personal-info {
@@ -3574,16 +3577,16 @@ figcaption {
 }
 
 .my-info {
-  padding: 3%;
   margin: 1%;
   font-family: 'Optician sans', sans-serif;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 18px;
   width: 80%;
+  letter-spacing: -1px;
 }
 
 #profile-pic {
-  height: 250px;
+  height: 100px;
   min-width: 250px;
   display: flex;
   justify-content: center;
@@ -3592,13 +3595,14 @@ figcaption {
 
 .profile-pic {
   padding: 0;
-  height: 200px;
+  height: 75px;
   border-radius: 50%;
 }
 
 #line-divisor-profile-pic {
-  height: 80px;
-  width: 1px;
+  width: 50px;
+  margin-top: 5%;
+  min-height: 1px;
   background-color: rgba(255, 255, 255, 0.253);
 }
 
@@ -3824,6 +3828,7 @@ figcaption {
 
 .right-part{
   padding-right: 2%;
+  padding-left: 1%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3992,8 +3997,7 @@ figcaption {
 .about-me-wrapper {
   z-index: -1;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.5s;
+  transition: all 0.3s ease-in-out;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -4004,18 +4008,22 @@ figcaption {
   left:0;
   right:0;
   bottom: 0;
-  -webkit-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.3s ease-in;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
 }
 
 .about-me {
-  transform: scale(0.9);
-  width: 80%;
-  height: fit-content;
+  width: 25%;
+  height: 100vh;
   border: 1px solid rgba(255, 255, 255, 0.267);
   background-color: rgb(4,26,23);
+  position: fixed;
+  right: -500px;
+  top: 0;
+  transition: 600ms all ease;
 }
 
 #about-me-toggle {
@@ -4038,11 +4046,16 @@ figcaption {
   right:0;
   bottom: 0;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#about-me-toggle:checked ~ .about-me-wrapper .about-me {
+  right: 0;
+  transition: 600ms all ease;
 }
 
 .cart-wrapper {
@@ -6004,8 +6017,8 @@ figcaption {
 .project-web-wrapper {
   z-index: -1;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
-  transition-delay: 0.5s;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -6016,19 +6029,22 @@ figcaption {
   left:0;
   right:0;
   bottom: 0;
-  -webkit-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.3s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .project-info {
-  transform: scale(0.9);
-  width: 40%;
+  width: 70%;
   height: fit-content;
   border: 1px solid rgba(255, 255, 255, 0.267);
   background-color: rgb(4,26,23);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hover-details {
@@ -6064,16 +6080,10 @@ figcaption {
 
 .hover-details .preview-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 5px;
   width: 70%;
   margin-top: 15px;
-}
-
-.hover-details .preview-buttons label{
-  font-weight: 400;
-  display: block;
-  margin-bottom: 0;
 }
 
 .hover-details button {
@@ -6086,7 +6096,6 @@ figcaption {
   padding-left: 8px;
   line-height: 12px;
   box-sizing: content-box;
-  margin-left: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6095,6 +6104,14 @@ figcaption {
 .btn-icon {
   box-sizing: content-box;
   margin: 0;
+}
+
+.demo-video {
+  width: 100%;
+}
+
+.demo-video video {
+  width: 100%;
 }
 
 .btn-icon i {
@@ -6112,6 +6129,7 @@ figcaption {
 
 .project-header {
   height: 8%;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   padding: 2%;
   display: flex;
@@ -6125,7 +6143,7 @@ figcaption {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 85%;
+  width: 100%;
   padding: 2%;
 }
 
@@ -6153,8 +6171,8 @@ figcaption {
   right:0;
   bottom: 0;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6187,14 +6205,23 @@ figcaption {
 
   .my-info {
     width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .about-me {
+    width: 30%;
   }
 
   #profile-pic {
-    display: none;
+    
   }
 
   #line-divisor-profile-pic {
-    display: none;
+    
   }
   
   .utility-page-wrap {
@@ -6581,6 +6608,29 @@ figcaption {
     font-size: 16px;
   }
 
+  .about-me-header h4{
+    font-size: 16px;
+    padding: 3px;
+  }
+
+  .about-me-header {
+    height: 8%;
+    padding: 0;
+  }
+
+  .my-info {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .about-me {
+    width: 45%;
+  }
+
   .section.about-1 {
     padding-top: 123px;
     padding-bottom: 57px;
@@ -6798,6 +6848,14 @@ figcaption {
 @media screen and (max-width: 479px) {
   #victor-dantas-logo {
     font-size: 14px;
+  }
+
+  .about-me-header {
+    text-align: center;
+  }
+
+  .about-me {
+    width: 50%;
   }
 
   .section {
