@@ -3783,6 +3783,7 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .profile-pic {
@@ -4217,7 +4218,7 @@ figcaption {
   right: -500px;
   top: 0;
   transition: 600ms all ease;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 #about-me-toggle {
