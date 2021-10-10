@@ -4217,6 +4217,7 @@ figcaption {
   right: -500px;
   top: 0;
   transition: 600ms all ease;
+  overflow-y: auto;
 }
 
 #about-me-toggle {
@@ -6398,12 +6399,34 @@ figcaption {
   line-height: 30px;
 }
 
+@media screen and (max-height: 750px) {
+  .my-info {
+    margin: 1%;
+    font-family: 'Optician sans', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    width: 80%;
+    letter-spacing: -1px;
+  }
+
+  #profile-pic {
+    display: none;
+  }
+  
+  .profile-pic {
+    display: none;
+  }
+  
+}
+
+  
+
 @media screen and (max-height: 1080px) {
   .my-info {
     margin: 1%;
     font-family: 'Optician sans', sans-serif;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 22px;
     width: 80%;
     letter-spacing: -1px;
   }
