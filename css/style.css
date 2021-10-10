@@ -3772,7 +3772,7 @@ figcaption {
   margin: 1%;
   font-family: 'Optician sans', sans-serif;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 24px;
   width: 80%;
   letter-spacing: -1px;
 }
@@ -3794,6 +3794,7 @@ figcaption {
 #line-divisor-profile-pic {
   width: 50px;
   margin-top: 5%;
+  margin-bottom: 3%;
   min-height: 1px;
   background-color: rgba(255, 255, 255, 0.253);
 }
@@ -4841,7 +4842,7 @@ figcaption {
   transition: all 300ms ease;
   font-family: 'Optician sans', sans-serif;
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 50px;
   letter-spacing: 3px;
 }
@@ -6395,6 +6396,17 @@ figcaption {
 .quote-title {
   font-size: 28px;
   line-height: 30px;
+}
+
+@media screen and (max-height: 1000px) {
+  .my-info {
+    margin: 1%;
+    font-family: 'Optician sans', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    width: 80%;
+    letter-spacing: -1px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -8053,7 +8065,7 @@ figcaption {
 
 @media screen and (max-width: 991px) {
   .email {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 0;
   }
 
