@@ -41,6 +41,30 @@
     event.stopPropagation();
   });
 
+  function changeText(submitId, thankYouId){
+    function allFilled($fields) 
+    {
+      return $fields.filter(function() {
+        return this.value === ''; 
+      }).length == 0;
+    }
+
+    function validateEmail(email) {
+      const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+
+    $fields = $('#Name, #Email-2, #Message');
+    if(allFilled($fields) && validateEmail($('#Email-2')[0].value)) {
+      var submit = document.getElementById(submitId);
+      var thankyou = document.getElementById(thankYouId)
+      submit.style = 'transition: 300ms ease all; opacity: 0;width: 100%;'
+      thankyou.style="position: absolute;transition: 300ms ease all; opacity: 1;width: 100%; z-index: -10;top: 0;left: 0;right: 0;bottom: 0;width: 100%;background-color: #28965f;"
+      return false;
+    }
+};
+
+
   
 
 
