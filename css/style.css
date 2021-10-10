@@ -6398,14 +6398,18 @@ figcaption {
   line-height: 30px;
 }
 
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 1080px) {
   .my-info {
     margin: 1%;
     font-family: 'Optician sans', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 28px;
     width: 80%;
     letter-spacing: -1px;
+  }
+
+  .about-me {
+    width: 40%;
   }
 }
 
